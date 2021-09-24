@@ -1,29 +1,41 @@
-//Muutuja
-let name = "Carolin Raudam"
-name = "Carolin Klais";
-let firstname = "Carolin";
-let $ = "Dollar";
+// Andmetüübid
+
+
+// Lihtsad andmed - Primitives
+
+ // ---TEKST
+	const name= "Carolin Raudam";
+
+	const age = 17;
+
+	const height = 1.73;
 
 
 
-// Muutujua, mis on konstantne 
-const surname = "Raudam";
-// surname = "Klais";
+ // --- TÕEVÄÄRTUSD
+	const haskids = false
+
+	const goestoschool = true
 
 
 
-//Massivid
-const numbers = [1, 2, 3, 4, 5];
-numbers.push(6);
+ // --- TÜHIVÄÄRTUSED
+	const hasairplane = null;
 
 
-//Objekt
-const person = {
-	name: "Carolin",
-	age: 17
-};
+//Keerulised andmed - REFERENCE TYPES
 
-person.age = 18;
-console.log(numbers);
+
+ // ---MASSIIV 
+
+ 	const hobbies = ['music', 'sport'];
+
+ // ---OBJECT
+ 	const person = {
+ 		name: 'Caroin',
+ 		age :17
+ };
+
 console.log(person);
+console.log(typeof person);
 
