@@ -1,25 +1,17 @@
-const person ={
-    firstname : 'Kadi',
-    lastname: 'Tamm',
-    age: 23,
-    email:'Kadi.Tamm@gmail.com',
-    hobbies: ['music', 'sport'],
-    address: {
-        city: 'Tallinn',
-        country: 'Harjumaa'
-     },
-    getBirthyear:function () {
-        return 2021- this.age;
-    } 
+const today = new Date
 
-};
-let val;
 
-val = person.firstname;
-val = person['lastname'];
-val = person.age;
-val = person.hobbies[1]
-val = person.address.city;
-val = person.getBirthyear();
+val = today; //consoolist vali <prototype>, et saada cheatcode B)
 
-console.log(val)
+birthday = new Date('10/02/2021 12:00_36');
+
+
+birthday.setMonth(2);
+birthday.setDate(12);
+birthday.setFullYear(2020);
+birthday.setHour(17);
+birthday.setMinutes(38);
+birthday.setSeconds(40);
+birthday.setMilliseconds(15);
+
+console.log(birtday)
