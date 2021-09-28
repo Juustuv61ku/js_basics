@@ -1,32 +1,172 @@
-// üldtsükkel
-/*
-for(let i = 0; i < 10; i++){
-    if (i % 2 === 0)
-    console.log(i)
+// deklareerimine
+
+function greeting(firstname, lastname) {
+    if(typeof firtname === 'undefined'){
+        firstname = 'Carolin'
+        lastname = 'Raudam'
+    }
+    return'Tere,'+ ' ' + firstname + ' ' + lastname;
 }
-*/
+
+//kasutamine
+
+greet = greeting()
+console.log(greet)
+
+//f-on def nagu const
+
+const square = function (number = 3) {
+    return Math.pow(number, 2)
+};
+console.log(sqaure())
 
 
-/*
-for(let i = 0; i < 10; i++){
-    //if(i === 5) break;
-    //if (i === 5) continue;
-    console.log(i)
-}
-*/
+
+(function(){
+    console.log('function is ran')
+})();
 
 
-/*
-let i = 0
-while (i < 10){
-    console.log(i)
-    i++;
-}
-*/
+(function(name){
+    console.log('Tere,' + name)
+}('Carolin')
 
 
-let j = 0;
-do{
-    console.log(j)
-    i++
-}while(j<10)
+
+//f- atribudina
+const todoList ={
+    add: function(task){
+        console.log('Task is added')
+    }
+    edit: function(oldtask, newtask){
+        console.log(`${oldtask} is changed to ${newtask}`)
+    }
+    delete: function(task){
+        console.log(task + 'is deleted')
+    }
+} 
+
+todoList.add('Study Js')
+todoList.edit('Study JS', 'Study typeScript')
+todoList.delete('Study Js')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
