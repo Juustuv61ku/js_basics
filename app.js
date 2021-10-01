@@ -1,27 +1,15 @@
 let val;
 
-const list = document.querySelector('url');
-const listItem = document.querySelector('li:first-child');
 
-val = list.children
-val = list.children[1];
-list.children[1].textContent = 'Study XML'
-val = list.children[2].children;
-list.children[0].style.color = 'blue'
+const li = document.createElement('li')
+const ul = document.querySelector('ul')
 
+li.className = 'collection-item'
 
-val = list.firstElementChild
-val = list.lastElementChild
-val = list.childElementCount
+li.appendChild(document.createTextNode('Study JS element creation'))
 
+ul.addChild(li)
 
-val = listItem.parentElement
-val = listItem.nextElementSibling
-val = listItem.previousElementsibling
+console.log(const)
 
-
-
-
-
-
-console.log(val)
+//kodune töö Loo link X näitamiseks
