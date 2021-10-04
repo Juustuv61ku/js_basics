@@ -1,20 +1,9 @@
-const form = document.querySelector('form');
+const list = document.querySelector('ul');
 const taskInput = document.querySelector('#task');
 
 
+list.addEventListener('click', runEvent )
 
-//taskInput.addEventListener('keydown', runEvent )
-//taskInput.addEventListener('keyup', runEvent )
-//taskInput.addEventListener('keypress', runEvent )
-
-
-//taskInput.addEventListener('focus', runEvent )
-//taskInput.addEventListener('blur', runEvent )
-
-//taskInput.addEventListener('cut', runEvent )
-//taskInput.addEventListener('paste', runEvent )
-
-taskInput.addEventListener('input', runEvent )
 
 
 
