@@ -1,10 +1,12 @@
 const form = document.querySelector('form');
 const taskInput = document.querySelector('#task');
-
+const list = document.querySelector('ul')
+const clearbtn = document.querySelector('#clear');
 
 
 form.addEventListener('submit', addTask );
-
+list.addEventListener('click', delTask );
+clearbtn.addEventListener('click', delAll );
 
 
 
@@ -29,3 +31,21 @@ form.addEventListener('submit', addTask );
  
  }
 
+function delTask(e) {
+     console.log(e.target)     
+     if(e.target.textContent.toLowerCase() == 'x'){
+          if(confirm('Do you want to remove this task?')){
+               e.target.parentElement.remove()
+          }
+          
+     }
+}
+
+function delAll() {
+     if(confirm('Do you want to remove all tasks?')){
+               while(list.firstChild){
+          list.removeChild(list.firstChild)
+          }
+     
+     }
+}
