@@ -26,6 +26,9 @@ clearbtn.addEventListener('click', delAll );
       li.appendChild(link);
       list.appendChild(li);
 
+
+      addTastToLs(tastInput.value)
+
       taskInput.value = '';
       e.preventDefault();
  
@@ -36,6 +39,7 @@ function delTask(e) {
      if(e.target.textContent.toLowerCase() == 'x'){
           if(confirm('Do you want to remove this task?')){
                e.target.parentElement.remove()
+               delTaskFromLs(e.target.parentElement.textContent)
           }
           
      }
@@ -49,3 +53,23 @@ function delAll() {
      
      }
 }
+
+function addTastToLs(task) {
+     let tasks;
+     if(localStorage.getItem('tasks') === null){
+          tasks = []
+
+}
+     else{
+          tasks= JSON.parsel(localStorage.getItem('tasks'))
+     }
+          tasks.push(task)
+          console.log(tasks)
+          localStorage.setItem('tasks', JSON.sringify(tasks))
+}
+
+function delTaskFromLs(task) {
+      let tasks;
+     if(localStorage.getItem('tasks') === null){
+          tasks = []
+     
