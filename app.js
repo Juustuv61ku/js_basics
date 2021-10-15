@@ -132,5 +132,5 @@ function filterTasks(e) {
           li.style.display = 'none'
 
 
-     })
+     }
 }
